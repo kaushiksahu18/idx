@@ -15,7 +15,7 @@
     pkgs.meslo-lgs-nf
   ];
   # Sets environment variables in the workspace
-  env = {};
+  env = { };
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
@@ -25,38 +25,39 @@
       "jock.svg"
       "usernamehw.errorlens"
       "yoavbls.pretty-ts-errors"
-      "bbenoist.Nix"
+      "jnoortheen.nix-ide"
       "bradlc.vscode-tailwindcss"
       "formulahendry.auto-rename-tag"
       "dsznajder.es7-react-js-snippets"
     ];
     # Enable previews
-    previews = {
-      enable = true;
-      previews = [
-        {
-          # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
-          # and show it in IDX's web preview panel
-          command = ["npm" "run" "dev"];
-          manager = "web";
-          id = "web";
-          env = {
-            # Environment variables to set for your server
-            PORT = "$PORT";
-          };
-        }
-      ];
-    };
+    # previews = {
+    #   enable = true;
+    #   previews = [
+    #     {
+    #       # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
+    #       # and show it in IDX's web preview panel
+    #       command = ["npm" "run" "dev"];
+    #       manager = "web";
+    #       id = "web";
+    #       env = {
+    #         # Environment variables to set for your server
+    #         PORT = "$PORT";
+    #       };
+    #     }
+    #   ];
+    # };
     # Workspace lifecycle hooks
     workspace = {
-      # Runs when a workspace is first created
+      # Commands to execute when the workspace is created and opened for the first time.
       onCreate = {
         # Example: install JS dependencies from NPM
         # npm-install = 'npm install';
+        starship-config = "starship preset pure-preset -o ~/.config/starship.toml";
       };
+      # Commands to execute whenever the workspace is opened.
       onStart = {
         # Example: start a background task to watch and re-build backend code
-        download-dep = "npm install";
       };
     };
   };
