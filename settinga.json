@@ -62,8 +62,41 @@
   },
   "editor.cursorSmoothCaretAnimation": "on",
   "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
-  "workbench.colorTheme": "Catppuccin Mocha",
   "files.autoSave": "afterDelay",
   "IDX.corgiMode": true,
-  "IDX.aI.enableCodebaseIndexing": true
+  "IDX.aI.enableCodebaseIndexing": true,
+  "workbench.activityBar.location": "top",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.showTabs": "single",
+  "supermaven.enable": {
+    "rust": false,
+    "*": true
+  },
+  "editor.minimap.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "[Kanagawa]": {
+      "comments": {
+        "foreground": "#FF9E3B"
+      }
+    },
+    "[Catppuccin Mocha]": {
+      "comments": {
+        "foreground": "#a6adc8"
+      }
+    }
+  },
+  "editor.semanticHighlighting.enabled": true,
+  "terminal.integrated.minimumContrastRatio": 1,
+  "window.titleBarStyle": "custom",
+  "gopls": {
+    "ui.semanticTokens": true,
+  },
+  "supermaven.otherWarning": false,
+  "workbench.colorTheme": "Kanagawa",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
 }
