@@ -19,6 +19,7 @@
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
+      "metaphore.kanagawa-vscode-color-theme"
       "Catppuccin.catppuccin-vsc"
       "esbenp.prettier-vscode"
       "PKief.material-icon-theme"
