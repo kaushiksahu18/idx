@@ -11,6 +11,10 @@
     # terminal
     pkgs.zsh
     pkgs.fzf
+    pkgs.eza
+    pkgs.bat
+    pkgs.tldr
+    pkgs.btop
     pkgs.neovim
     pkgs.zoxide
     pkgs.thefuck
