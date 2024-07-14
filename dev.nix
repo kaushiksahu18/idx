@@ -9,7 +9,11 @@
     pkgs.git
 
     # terminal
-    pkgs.fish
+    pkgs.zsh
+    pkgs.fzf
+    pkgs.neovim
+    pkgs.zoxide
+    pkgs.thefuck
     pkgs.starship
     pkgs.fira-code
     pkgs.meslo-lgs-nf
