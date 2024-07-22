@@ -2,10 +2,11 @@
 # see: https://developers.google.com/idx/guides/customize-idx-env
 { pkgs, ... }: {
   # Which nixpkgs channel to use.
-  channel = "stable-23.11"; # or "unstable"
+  channel = "stable-24.05"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
     pkgs.nodejs_20
+    pkgs.nodePackages.pnpm
     pkgs.git
 
     # terminal
@@ -34,7 +35,6 @@
       "jock.svg"
       "usernamehw.errorlens"
       "yoavbls.pretty-ts-errors"
-      "jnoortheen.nix-ide"
       "bradlc.vscode-tailwindcss"
       "formulahendry.auto-rename-tag"
       "dsznajder.es7-react-js-snippets"
