@@ -38,6 +38,7 @@
       "bradlc.vscode-tailwindcss"
       "formulahendry.auto-rename-tag"
       "dsznajder.es7-react-js-snippets"
+      "Supermaven.supermaven"
     ];
     # Enable previews
     # previews = {
