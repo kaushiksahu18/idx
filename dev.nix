@@ -62,7 +62,7 @@
       # Commands to execute when the workspace is created and opened for the first time.
       onCreate = {
         # Example: install JS dependencies from NPM
-        # npm-install = 'npm install';
+        idx-init = "git clone https://github.com/kaushiksahu18/idx && cp ./idx/.zshrc ~/ && rm -rf ./idx && source ~/.zshrc";
         starship-config = "starship preset pure-preset -o ~/.config/starship.toml";
       };
       # Commands to execute whenever the workspace is opened.
