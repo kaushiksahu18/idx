@@ -95,6 +95,6 @@
       }
     },
     "editor.semanticHighlighting.enabled": true,
-    "terminal.integrated.minimumContrastRatio": 1,
+    "terminal.integrated.minimumContrastRatio": 1
   }
   
