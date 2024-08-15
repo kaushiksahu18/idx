@@ -4,5 +4,5 @@ Mainly it contains the following files
 -  `settings.json` - vscode settings configrations
 
 ```
-git clone https://github.com/kaushiksahu18/idx && cp ./idx/.zshrc ~/ && cp ./idx/8.json ./.idx/ && rm -rf ./idx && source ~/.zshrc
+git clone https://github.com/kaushiksahu18/idx && cp ./idx/.zshrc ~/ && cp ./idx/*.json ./.idx/ && rm -rf ./idx && source ~/.zshrc
 ```
